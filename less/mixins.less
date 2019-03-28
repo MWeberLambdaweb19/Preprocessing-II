@@ -23,3 +23,19 @@
             }
         }
     }
+.mobilecontentshellmixin (@direct, @wrap) {
+    width: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: @direct;
+    flex-wrap: @wrap;
+    justify-content: center;
+    align-items: center;
+}
+.mobilecontentmixin (@justify:center, @align:center) {
+        width: 100%;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: @justify;
+        align-items: @align;
+    }
