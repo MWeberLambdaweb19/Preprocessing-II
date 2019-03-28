@@ -64,11 +64,24 @@ header {
   display: flex;
   flex-flow: row wrap;
   justify-content: space-between;
-  .headbox {
-    margin-top: 10px;
-    margin-bottom: 10px;
-    padding-bottom: 10px;
-    border-bottom: 2px dashed lightgrey;
+  border-bottom: 2px dashed lightgrey;
+  h1 {
+    margin-bottom: 20px;
   }
+}
+.headbox {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+  border-bottom: 2px dashed lightgrey;
+  font-family: 'Roboto', sans-serif;
+  img {
+    width: 80%;
+    margin: 0 auto;
+  } 
+}//header
 
+.btn {
+  margin: 0 auto;
+  .buttonmixin();
 }
