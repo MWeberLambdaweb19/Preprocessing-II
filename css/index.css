@@ -347,6 +347,9 @@ nav a {
   width: 30%;
   margin-bottom: 30px;
 }
+.home .content-pick .destination a {
+  text-decoration: none;
+}
 @media (max-width: 500px) {
   .home .content-pick .destination {
     width: 100%;
@@ -422,13 +425,27 @@ nav a {
 .home .btn a {
   text-decoration: none;
   color: white;
-  background: teal;
 }
 .home .btn:hover {
   background: white;
   color: teal;
 }
 .home .btn:hover a:hover {
-  background: white;
   color: teal;
+}
+form {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-evenly;
+  padding: 10px;
+  background: sandybrown;
+}
+input[type=submit] {
+  margin: 10px 0 0 0;
+  background: turquoise;
+  color: white;
+  font-size: 1.5rem;
+}
+input [type=text] {
+  font-size: 1.5rem;
 }
