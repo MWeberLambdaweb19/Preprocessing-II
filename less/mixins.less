@@ -1,1 +1,58 @@
 // Mixins in here
+.buttonmixin(@bgcolor: teal, @fcolor: white){
+    width: 90%;
+    height: 50px;
+    border-radius: 15px;
+    background:@bgcolor;
+    color:@fcolor;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    a {
+        text-decoration: none;
+        color:@fcolor;
+    }
+    &:hover {
+        background:@fcolor;
+        color:@bgcolor;
+        a:hover {
+            color:@bgcolor;
+            }
+        }
+    }
+// .mobilecontentshellmixin (@direct, @wrap) {
+//     width: 100%;
+//     margin: 0;
+//     display: flex;
+//     flex-direction: @direct;
+//     flex-wrap: @wrap;
+//     justify-content: center;
+//     align-items: center;
+// }
+.mobilecontentmixin() {
+        width: 100%;
+        h2 {
+          margin-top: 10px;
+          align-self: flex-start;
+          padding-left: 10px;
+        }
+        p {
+          padding-left: 10px;
+        }
+}
+.mobiledestinymixin() {
+    width: 100%;
+    padding: 0 40px;
+    h2 {
+      margin-top: 10px;
+      align-self: flex-start;
+    }
+}
+.mobilecontentmixinimg (@justify:center, @align:center) {
+        width: 100%;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: @justify;
+        align-items: @align;
+    }
